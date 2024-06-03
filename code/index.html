@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock and Rouge San Francisco</title>
+    <link rel="stylesheet" href="/STYLE/style.css">
+    <link rel="stylesheet" href="/STYLE/normalize.css">
+    <script defer src="/CODE/horario.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body onload="horario();" class="body">
+    <header class="header">
+        <div class="header-container">
+            <div  class="icons-container">
+                <div class="menu-container">
+                    <button class="boton" onclick="togglemenu()">
+                        <img src="/IMG/menu.svg" alt="menu" class="icons-menu icons">
+                    </button>
+                    <div  id="menuList-container">
+                        <ul class="menu-list">
+                            <li class="list"><img src="/IMG/house.svg" alt=""><a >Inicio</a></li>
+                            <li class="list"><img src="/IMG/info.svg" alt=""><a href="#">Información</a></li>
+                            <li class="list"><img src="/IMG/instagram.svg" alt=""><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                            <li class="list"><img src="/IMG/facebook.svg" alt=""><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <a class="logo-container" href="#">
+                    <img src="/IMG/logo.jpg" alt="logo" class="icons-logo icons">
+                </a>
+                <div class="lupa-container" >
+                    <img src="/IMG/lens.svg" alt="lens" class="icons-lens icons">
+                </div>
+            </div>
+            <div id="time-table">
+                <img src="/IMG/sleep.svg" id="time-sleep">
+                <div id="time-text">
+                    <h2 id="titulo-horario">En este momento estamos cerrados</h2>
+                    <a class="texto-horario" onclick="abrirventana()">
+                        <p>Hacé click para consultar nuestros horarios.</p> 
+                    </a>
+                </div>
+            </div>
+            <div class="container_horario">
+                <div class="horario">
+                    <img src="/IMG/info.svg" alt="info">
+                    <h1>Horarios de atención</h1>
+                    <h3>Días: Lunes, Martes, Miércoles, Jueves, Viernes, Sábado y Domingo</h3>
+                    <h3>Horario: de 19:00PM a 24:00PM.</h3>
+                    <button class="button_horario" onclick="abrirventana()">aceptar</button>
+                </div>
+            </div>
+        
+        </div>
+    </header>
+
+    <main>
+        <div class="main_container">
+            <div class="title-conteiner">
+                <div class="main-titles">
+                    <h1 class="main-title">Categorías</h1>
+                </div>
+            </div>
+            <div class="about-main">
+                
+                <a href="/CODE/comidas/celiaco.html" class="imgs" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))  ,url('/IMG/celiaco.png');">
+                    <h3>Celíacos</h3>
+                </a>
+                <a href="/CODE/comidas/hamburguesa.html" class="imgs" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))  , url('/IMG/hamburguesa.jpg');">
+                    <h3>Hamburguesas 20% OFF</h3>
+                </a>
+                <a href="/CODE/comidas/picoteo.html" class="imgs" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))  ,url('/IMG/picoteo.jpg');">
+                    <h3>Picoteo 20% OFF</h3>
+                </a>
+                <a href="/CODE/comidas/tablas.html" class="imgs" style="background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3))  , url('/IMG/empanadas.jpg');">
+                    <h3>Tablas 20% OFF</h3>
+                </a>
+                <a href="/CODE/comidas/pizzas.html" class="imgs" style="background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('/IMG/pizza.jpg');">
+                    <h3>Pizzas 20% OFF</h3>
+                </a>
+                <a href="/CODE/comidas/sandwiches.html" class="imgs" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))  , url('/IMG/sanguche.jpg');">
+                    <h3>Sandwiches 20% OFF</h3>
+                </a>
+                <a href="/CODE/comidas/vegano.html" class="imgs" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))  , url('/IMG/vegano.jpg');">
+                    <h3>Vegano 20% OFF</h3>
+                </a>
+                <a href="/CODE/comidas/tacos.html" class="imgs" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))  , url('/IMG/tacos.jpg');">
+                    <h3>Tacos 20% OFF</h3>
+                </a>
+                <a href="/CODE/comidas/papas.html" class="imgs" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))  , url('/IMG/papas.jpg');">
+                    <h3>Papas 20% OFF</h3>
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="/CODE/menu.js"></script>
+    <script src="/CODE/horario_ventana.js"></script>
+    <script src="/CODE/scriptsearcher.js"></script>
+    <script src="/CODE/suggestions.js"></script>
+
+</body>
+</html>

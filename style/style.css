@@ -1,0 +1,314 @@
+/*<header*/
+*{
+    margin: 0;
+    padding: 0;
+    border:none;
+}
+.body{
+    overflow-x: hidden;
+}
+.icons-container{
+    display: flex;    
+    background-color: rgb(27, 26, 26);
+    height: 55px;
+    width: 100vw;
+}
+.boton{
+    background-color: rgb(27, 26, 26);
+    border: none;
+    cursor:pointer
+}
+#menuList-container{
+    display: none;
+}
+.list{
+    display: flex;
+    padding-bottom: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+.list img{
+    width: 20px;
+}
+.list a{
+    margin-left: 20px;
+}
+.menu-list{
+    padding-top: 17px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    list-style-type: none;
+    z-index: 10;
+    height: calc(100vh - 55px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 55px;
+    left: 0;
+    box-sizing: border-box;
+    width: 250px;
+}
+.menu-list li{
+    margin-bottom: 5px;
+}
+.menu-list li a {
+    text-decoration: none;
+    color: white;
+}
+.icons-menu{
+    display: flex;
+    margin-right: 10px;
+}
+.icons{
+    display: flex;
+    width: 40px;
+    height: 30px;
+    justify-content: center;
+    height: 100%; 
+    margin-left: 10px;
+}
+.logo-container{
+    margin: 8px;
+}
+.lupa-container{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.icons-lens{ 
+    margin-right: 10px;
+    height: 25px;
+}
+#time-table{
+    display: flex;
+    background-color: #ffd082;
+    height: 73px;
+    align-items: center;
+    justify-content: center;
+}
+.container_horario{
+    display: none;
+}
+
+.horario{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    height: 330px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    top: 50%;
+    transform: translateY(-50%) translate(  -50%);
+    width: 80%;
+    left: 50%;
+    z-index: 1;
+    flex-direction: column;
+    max-width: 600px;
+}
+.button_horario{
+    background-color: #ff7c7c;
+    width: 50% ;
+    margin: 0 auto;
+    height: 2.5em;
+    border-radius: 8px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: white;
+}
+.horario img{
+    filter: invert(52%) sepia(58%) saturate(1586%) hue-rotate(316deg) brightness(96%) contrast(101%);
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.horario h1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0;
+    padding-bottom: 15px;
+}
+.horario h3{
+    color: grey;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    padding-bottom: 1em;
+}
+#time-text h2, #time-text p{
+    font-size: .9em;
+    margin: 5px 0 5px 5px;
+}
+.texto-horario{
+    cursor: pointer;
+}
+#time-sleep{
+    display: flex;
+    height: 28px;
+}
+.menu-container{
+    position: relative;
+    display: inline-block;
+}
+.boton1-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton1{
+    width: 16px;
+    cursor: pointer;
+}
+
+/*header>*/
+
+/*<main*/
+
+.title-conteiner{
+    width: 100%;
+    margin: 0;
+
+}
+.main-titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-title{
+    display:flex;
+    padding-left: 85px;
+    width: calc(100vw - 85px);
+    height: 40px;
+    color: white;
+    font-family:"Anton", sans-serif;
+    font-weight: 100;
+    font-size: 1.4em;
+}
+.about-main{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+    flex-wrap:wrap;
+    height: 380px;
+    overflow: auto; 
+}
+.about-main a h3{
+    font-family: "Open Sans", sans-serif;
+}
+.imgs{
+    flex: 1 1 300px;
+    min-height: 110px;
+    border-radius: 10px;
+	font-weight: bold;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.imgs h3{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;   
+}
+.main_container {
+    margin-left: 0; /* Inicialmente sin margen */
+    transition: margin-left 0.6s ease; /* Agregar transición para suavizar el desplazamiento */
+    /* width: calc(100% - 250px); Ancho de la ventana menos el ancho del menú cuando está abierto */
+    background: linear-gradient(to bottom, black 0%, black 30%, white 30%, white 100%);
+
+    
+}
+/*main>*/
+/* 2do nivel */
+
+.food{
+    width: 99px;
+    height: 90px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.about-main2{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+    flex-wrap:wrap;
+    overflow: visible;
+    margin: 0 90px;
+    background-color: white;
+    padding: 25px 15px;
+    box-sizing: border-box;
+}
+.about-main2 a{
+    flex:1 1 300px;
+    min-height: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.icon{
+    margin-left: auto;
+    width: 30px;
+}
+.about-items{
+    display: flex;
+    align-items: center;
+    height:90px;
+    width: 370px;
+    text-decoration: none;
+}
+    
+.about-items2{
+    background-size: contain;
+    background-position: center;
+}
+.about-items div{
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: 1px;
+    color: rgb(77, 71, 71);
+}
+.about-items div h1{
+    font-size: 1em;
+}
+.about-items div h2{
+    color: black;
+    font-size: 1.1em;
+}
+.about-items div h1{
+    margin: 5px;
+}
+.about-items div h2{
+    margin: 8px;
+}
+.main-titles2{
+    display: flex;
+    align-items: center;
+}
+.main-titles2 img{
+    width: 30px;
+    padding-left: 80px;
+    padding-right: 10px;
+}
+.main-titles2 h1{
+    height: 60px;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

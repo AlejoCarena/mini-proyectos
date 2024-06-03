@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock and Rouge San Francisco</title>
+    <link rel="stylesheet" href="/STYLE/style.css">
+    <link rel="stylesheet" href="/STYLE/normalize.css">
+    <script defer src="/CODE/horario.js"></script>
+
+</head>
+<body onload="horario();" class="body">
+    <header class="header">
+        <div class="header-container">
+            <div  class="icons-container">
+                <div class="menu-container">
+                    <button class="boton" onclick="togglemenu()">
+                        <img src="/IMG/menu.svg" alt="menu" class="icons-menu icons">
+                    </button>
+                    <div  id="menuList-container">
+                        <ul class="menu-list">
+                            <li class="list"><img src="/IMG/house.svg" alt=""><a href="/CODE/index.html">Inicio</a></li>
+                            <li class="list"><img src="/IMG/info.svg" alt=""><a href="#">Información</a></li>
+                            <li class="list"><img src="/IMG/instagram.svg" alt=""><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                            <li class="list"><img src="/IMG/facebook.svg" alt=""><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="logo-container" href="/CODE/index.html">
+                    <img src="/IMG/logo.jpg" alt="logo" class="icons-logo icons">
+                </a>
+                <div class="lupa-container" >
+                    <img src="/IMG/lens.svg" alt="lens" class="icons-lens icons">
+                </div>
+            </div>
+            <div id="time-table">
+                <img src="/IMG/sleep.svg" id="time-sleep">
+                <div id="time-text">
+                    <h2 id="titulo-horario">En este momento estamos cerrados</h2>
+                    <a class="texto-horario" onclick="abrirventana()">
+                        <p>Hacé click para consultar nuestros horarios.</p> 
+                    </a>
+                </div>
+            </div>
+            <div class="container_horario">
+                <div class="horario">
+                    <img src="/IMG/info.svg" alt="info">
+                    <h1>Horarios de atención</h1>
+                    <h3>Días: Lunes, Martes, Miércoles, Jueves, Viernes, Sábado y Domingo</h3>
+                    <h3>Horario: de 19:00PM a 24:00PM.</h3>
+                    <button class="button_horario" onclick="abrirventana()">aceptar</button>
+                </div>
+            </div>
+        
+        </div>
+    </header>
+    <main>
+        <div class="main_container">
+            <div class="title-conteiner">
+                <div class="main-titles2">
+                    <a href="/CODE/index.html">
+                        <img src="/CODE/comidas/leftarrow.svg" alt="">
+                    </a>
+                    <h1 class="main-title">Hamburguesas 20% OFF</h1>
+                </div>
+            </div>
+            <div class="about-main2">
+                <a class="about-items about-items2" href="">
+                    <img class="food" src="/IMG/hamburguesa.jpg" alt="empanadas">
+                    <div>
+                        <h1>Mick Jagger</h1>
+                        <h2>$5.920</h2>
+                    </div>
+                    <img class="icon" src="/CODE/comidas/rightarrow.svg" alt="">
+                </a>
+                <a class="about-items about-items2" href="">
+                    <img class="food" src="/IMG/hamburguesa1.jpg" alt="tartas">
+                    <div>
+                        <h1>Bono</h1>
+                        <h2>$5.920</h2>
+                    </div>
+                    <img class="icon" src="/CODE/comidas/rightarrow.svg" alt="">
+                </a>
+                <a class="about-items about-items2" href="">
+                    <img class="food" src="/IMG/hamburguesa2.jpeg" alt="empanadas">
+                    <div>
+                        <h1>Beethoven</h1>
+                        <h2>$5.920</h2>
+                    </div>
+                    <img class="icon" src="/CODE/comidas/rightarrow.svg" alt="">
+                </a>
+                <a class="about-items about-items2" href="">
+                    <img class="food" src="/IMG/hamburguesa3.jpg" alt="tartas">
+                    <div>
+                        <h1>Burger Taylor</h1>
+                        <h2>$5.200</h2>
+                    </div>
+                    <img class="icon" src="/CODE/comidas/rightarrow.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="/CODE/menu.js"></script>
+    <script src="/CODE/horario_ventana.js"></script>
+
+</body>
+</html>
