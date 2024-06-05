@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #d6d1af8b;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.aboutMain{
+    display: flex;
+    width: 90vw;
+}
+.imgs{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    flex: 0.3;
+    transition: all 700ms ease-in;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.185);
+}
+.imgs h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.imgs.active{
+    flex: 5;
+} 
+.imgs.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+} 
+@media (max-width: 480px) {
+    .aboutMain{
+      width: 100vw;
+    }
+  
+    .imgs:nth-of-type(4),
+    .imgs:nth-of-type(5) { /*oculta la imgs 4 y 5*/
+      display: none;
+    }
+  }
